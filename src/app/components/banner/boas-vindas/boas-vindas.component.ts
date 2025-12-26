@@ -7,5 +7,6 @@ import { DatePipe,TitleCasePipe } from '@angular/common';
   styleUrl: './boas-vindas.component.css'
 })
 export class BoasVindasComponent {
+  nome = 'Dotta';
   dataAtual = new Date();
 }
