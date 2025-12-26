@@ -9,7 +9,7 @@
                 <div class="select-wrapper">
                     <select [(ngModel)]="tipoTransacao" name="tipo-transacao" class="campo select-tipo-transacao">
                         <option value="" selected disabled>Selecione o tipo de transação</option>
-                        @for (tipo of tipoTransacao | keyvalue; track tipo.key) {
+                        @for (tipo of tipoTransacaoEnum | keyvalue; track tipo.key) {
                             <option [value]="tipo.value">{{tipo.value}}</option>
                         }
                     </select>
